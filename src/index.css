@@ -1,13 +1,206 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    height:70px ;
+    background-color: rgb(2, 2, 2);
+    box-shadow:0px 0px 8px 8px #000; 
+}
+                                                                          /*Navbar*/
+.navBar {
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+.titulo {
+    font-size: 50px;
+    font-weight:lighter;
+    font-family: 'Caveat', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-ul {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content:space-around ; 
+}
+li {
+    display: flex;
+    padding: 10px;
+    height:70%;
+    margin: 5px;
+}
+.enlace {
+    text-decoration: none;
+    transition: all 0.3s;
+    font-size: 17px;
+    height: 100%;
+   color:rgb(188, 183, 183);
+   font-weight: bolder;
+   letter-spacing: 1px;
+}
+.enlace:hover {
+    color: rgb(255, 251, 251);
+    border-bottom: 1px solid rgb(134, 126, 126);
+    transform: scale(1.2,1.2);
+}
+.icono {
+    font-size: 35px;
+    transform: translate(-140px,12px);
+}
+.contenedorTitulo{
+    display:flex;
+    width:500px;
+}
+.contenedorImagen{
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+.imagen {
+    width:100%;
+    height: 100%;
+}
+                                                          /*Main*/
+
+.main-container {
+    background-image: url("../public/pizzaFondo.png");
+    background-attachment:fixed;
+    width: 100%;
+    height: 100%;
+    
+ }
+
+.div-contenedor{
+    width:95%;
+    padding: 25px;
+    margin-top: 12px;
+    height: 90%;
+}
+.tituloMarket {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.contenedorContador{
+    border: 1px solid rgb(0, 0, 0);
+    height: 150px;
+    width: 270px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+    background-color: rgb(217, 210, 210);
+    border-radius:10px;
+}                                                         
+.contador{
+    display: flex;
+    justify-content: space-evenly;
+}
+.texto-contador{
+    font-size: 20px;
+    font-weight:300;
+
+}
+.boton-contador {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+}
+.boton-contador:hover{
+    background-color:rgb(15, 15, 15) ;
+    color:white;
+}
+.contenedorBotonCarro{
+    display: flex;
+    justify-content: center;
+    height: 35px;
+
+}
+.boton-carro{
+    border-radius:40px;
+    width: 200px;
+    transition: all 0.2s;
+    border: 1px solid black;
+    font-weight: bolder;
+}
+.boton-carro:hover{
+    background-color:rgb(15, 15, 15) ;
+    color:white;
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+.item-titulo{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+}
+.item-precio{
+    font-weight: bolder;
+    font-size: 30px;
+}
+.imagen-card{
+    width: 100%;
+    height: 35%;
+}
+.contenedor-card{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.cards{
+    width: 20%;
+    height: 550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin: 15px;
+    box-shadow:5px 7px 7px 1px #000; 
+    background-color: rgb(238, 234, 234);
+    
+}
+.itemDetailContainer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.detail-img{
+    width: 60%;
+    height:50% ;
+    padding: 5px;
+}
+.detalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+.detail-card{
+    display: flex;
+    width:900px ;
+    height:100%;
+    justify-content: space-around;
+    border: 2px solid black;
+    background-color: rgb(238, 234, 234);
+    
+    
+}
+                                              /*Footer*/
+.footer-contenedor{
+    background-color: rgb(29, 29, 29);
+    width: 100%;
+    height: 60px;
 }

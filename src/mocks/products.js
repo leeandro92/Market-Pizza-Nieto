@@ -1,6 +1,6 @@
  export const products=[
     {
-        id:1,
+        id:"1",
         title:"Pizza de Muzzarella",
         price:1200,
         stock:10,
@@ -8,7 +8,7 @@
         img:"https://www.nueva-ciudad.com.ar/advf/imagenes/editadas/5e05008a2355e_800x550.jpg",
     },
     {
-        id:2,
+        id:"2",
         title:"Pizza con jamon y morrones",
         price:1400,
         stock:10,
@@ -16,7 +16,7 @@
         img:"https://pizzasargentinas.com/wp-content/uploads/2020/11/Jamon-y-morrones-1-731x411.jpg",
     },
     {
-        id:3,
+        id:"3",
         title: "Pizza de Cebolla",
         price:1500,
         stock:10,
@@ -24,7 +24,7 @@
         img:"https://placeralplato.com/files/2015/07/fugazza-640x480.jpg?width=1200&enable=upscale",
     },
     {
-        id:4,
+        id:"4",
         title: "Pizza de anchoas",
         price:1600,
         stock:10,
@@ -32,7 +32,7 @@
         img:"https://img-global.cpcdn.com/recipes/64501e3bdd2cbb07/1200x630cq70/photo.jpg",
     },
     {
-        id:5,
+        id:"5",
         title: "Pizza de rucula y panceta",
         price:1400,
         stock:10,
@@ -40,7 +40,7 @@
         img:"https://i.ytimg.com/vi/cTrNbn59iPg/maxresdefault.jpg",
     },
     {
-        id:6,
+        id:"6",
         title: "Pizza de pepperoni",
         price:1850,
         stock:10,
@@ -48,7 +48,7 @@
         img:"https://placeralplato.com/files/2019/02/Pizza-de-pepperoni-640x480.jpg?width=1200&enable=upscale",
     },
     {
-        id:7,
+        id:"7",
         title: "Pizza de palmitos",
         price:1700,
         stock:10,
@@ -56,7 +56,7 @@
         img:"https://www.clarin.com/img/2021/11/19/TpZgDQzT2_340x340__1.jpg",
     },
     {
-        id:8,
+        id:"8",
         title: "Pizza de champiñones",
         price:1500,
         stock:10,
@@ -64,6 +64,62 @@
         img:"https://i.blogs.es/40c9b7/pizza-casera-champinon/840_560.jpg",
     },
     
+    {
+        id:"9",
+        title: "Coca Cola",
+        price:320,
+        stock:10,
+        category:"Bebidas",
+        img:"https://carrefourar.vtexassets.com/arquivos/ids/220177/7790895000997_02.jpg?v=637704294205400000",
+    },
+    {
+        id:"10",
+        title: "Sprite",
+        price:300,
+        stock:10,
+        category:"Bebidas",
+        img:"https://m.media-amazon.com/images/I/61oPmQYOUOL._SX522_.jpg",
+    },
+    {
+        id:"11",
+        title: "Fanta",
+        price:300,
+        stock:10,
+        category:"Bebidas",
+        img:"https://carrefourar.vtexassets.com/arquivos/ids/220123/7790895000454_02.jpg?v=637704294056530000",
+    },
+    {
+        id:"12",
+        title: "Agua mineral",
+        price:300,
+        stock:10,
+        category:"Bebidas",
+        img:"http://cdn.shopify.com/s/files/1/0254/2947/5433/products/agua-glaciar-pet-2000-siempreencasa_1_1000x.png?v=1636551045",
+    },
+    {
+        id:"13",
+        title: "Helado",
+        price:280,
+        stock:10,
+        category:"Postres",
+        img:"https://images.hola.com/imagenes/cocina/recetas/20200212160473/helado-chocolate-facil/0-782-495/helado-chocolate-m.jpg",
+    },
+    {
+        id:"14",
+        title: "Chocotorta",
+        price:420,
+        stock:10,
+        category:"Postres",
+        img:"https://www.bettycrocker.lat/wp-content/uploads/2020/12/BClatam-recipe-torta-de-brownie-con-menta.png"
+    },
+    {
+        id:"15",
+        title: "Flan",
+        price:250,
+        stock:10,
+        category:"Postres",
+        img:"https://images.aws.nestle.recipes/original/b521e9b0f64d6f4f192535cd6f091601_Flan_casero_2.jpg",
+    },
 
     
 ]

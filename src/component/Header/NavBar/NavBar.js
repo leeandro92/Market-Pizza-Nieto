@@ -26,7 +26,9 @@ const NavBar = () => {
             <Link to="/category/Postres" className='enlace'>Postres</Link>
             </li>
         </ul>
-        <Link to="/cart"><CartWidget/></Link>
+        <Link to="/cart">
+          <CartWidget/>
+        </Link>
         
     </nav>
   )

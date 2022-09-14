@@ -3,14 +3,16 @@ import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';
 import Main from './component/Main/Main';
 import { BrowserRouter } from 'react-router-dom';
-
+import CartProvider from './Context/CartContext';
 function App() {
   return (
-    <BrowserRouter>
-      <Header/>
-        <Main />
-      <Footer/>
-    </BrowserRouter>
+    <CartProvider>
+      <BrowserRouter>
+        <Header/>
+          <Main />
+        <Footer/>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 export default App;

@@ -198,6 +198,10 @@ li {
     
     
 }
+.cartContenedor{
+    display: flex;
+    height: 700PX;
+}
                                               /*Footer*/
 .footer-contenedor{
     background-color: rgb(29, 29, 29);

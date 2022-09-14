@@ -5,7 +5,7 @@
         price:1200,
         stock:5,
         category:"Pizzas",
-        img:"https://www.nueva-ciudad.com.ar/advf/imagenes/editadas/5e05008a2355e_800x550.jpg",
+        img:"https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-tomate-albahaca-y-mozzarella-1080x671.jpg",
     },
     {
         id:"2",

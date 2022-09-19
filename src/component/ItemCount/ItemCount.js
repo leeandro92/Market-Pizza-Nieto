@@ -1,21 +1,20 @@
 import React,{useState} from 'react'
+import { useEffect } from 'react'
 
-const ItemCount = ({stock,initial,onAdd}) => {
+const ItemCount = ({stock,initial =1,onAdd}) => {
     const[contador,setContador]=useState(initial)
-
+ useEffect (()=> {
+    setContador(initial)
+ },[initial])
     const sumar = ()=> {
-        if (contador < stock) {
-            setContador(contador+1) 
-        }
-        else {
-            alert ("Maximo stock")
-        }
+        contador < stock && setContador (contador +1)
     }
     const restar = ()=> {
-        setContador(contador-1)
-        if (contador === initial) {
-            setContador(initial)
-        }
+        if(contador > 1)
+        setContador(contador -1)
+        else if ( contador < 1)
+        setContador(1)
+        
     }
   return (
     <div className='contenedorContador'>

@@ -193,11 +193,13 @@ li {
     display: flex;
     justify-content: center;
     padding: 10px;
+    height: 100vh;
 }
 .detail-img{
-    width: 60%;
-    height:50% ;
+    width: 70%;
+    height:90% ;
     padding: 5px;
+  
 }
 .detalles{
     display: flex;
@@ -210,7 +212,7 @@ li {
 .detail-card{
     display: flex;
     width:900px ;
-    height:100%;
+    height:70%;
     justify-content: space-around;
     border: 2px solid black;
     background-color: rgb(238, 234, 234);

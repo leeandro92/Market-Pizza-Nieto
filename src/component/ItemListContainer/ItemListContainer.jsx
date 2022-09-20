@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import {products} from '../../mocks/Products'
 import ItemList from './ItemsList/ItemList'
 import { useParams } from 'react-router-dom'
 import BeatLoader from "react-spinners/BeatLoader";
+import { collection,getDocs, query,where } from 'firebase/firestore';
+import { db } from '../../firebaseConfig';
 
 
 const ItemListContainer = () => {
@@ -10,18 +11,46 @@ const ItemListContainer = () => {
   const [productos,setProductos]=useState([])
   const [isLoading,setIsLoading] =useState(false)
   const {categoryId}=useParams()
-useEffect(()=>{
-  setIsLoading(true)
-  const getProducts= new Promise((res,rej)=> {
-    const prodFiltrados=products.filter( (prod)=>prod.category === categoryId)
-    setTimeout(()=>{res(categoryId?prodFiltrados:products)},1000)
-  })
 
-  getProducts.then((data)=>{
 
-   setProductos(data)
-   setIsLoading(false)
-  })
+  useEffect(()=>{
+    setIsLoading(true)
+  const itemCollection = collection(db,"productos")
+  const q =query(itemCollection,where("category","==",`${categoryId}`))
+   if(categoryId)  { 
+    getDocs(q)
+   .then((res)=>{
+ const productosFiltrados =res.docs.map((prod)=>{
+   return {
+     id:prod.id,
+     ...prod.data()
+   }
+ 
+ })
+ setProductos(productosFiltrados)
+ setIsLoading(false)
+   })
+   .catch((error)=> {
+     console.log(error)
+   }) 
+  }
+   else  {
+   getDocs(itemCollection)
+   .then((res)=>{
+ const productos =res.docs.map((prod)=>{
+   return {
+     id:prod.id,
+     ...prod.data()
+   }
+ 
+ })
+ setProductos(productos)
+ setIsLoading(false)
+   })
+   .catch((error)=> {
+     console.log(error)
+   })
+  }
   
 },[categoryId])
 

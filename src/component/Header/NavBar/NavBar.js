@@ -6,16 +6,17 @@ const NavBar = () => {
   return (
     <nav className='navBar'>
       <div className='contenedorTitulo'>
-        <h1 className='titulo'>Market Pizza</h1>
+      <Link to="/" className='link-titulo'>
+      <h1 className='titulo'>Market Pizza</h1>
+      </Link>
+        
         <div className='contenedorImagen'>
         <img src="pizza.png" alt="" className='imagen' />
         </div>
         
       </div>
         <ul className='nav-ul'>
-            <li>
-                <Link to="/" className='enlace'>Productos</Link>
-            </li>
+           
             <li>
                 <Link to="/category/Pizzas" className='enlace'>Pizzas</Link>
             </li>

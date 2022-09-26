@@ -17,7 +17,8 @@ const ItemListContainer = () => {
     setIsLoading(true)
   const itemCollection = collection(db,"productos")
   const q =query(itemCollection,where("category","==",`${categoryId}`))
-   if(categoryId)  { 
+   
+  if(categoryId)  { 
     getDocs(q)
    .then((res)=>{
  const productosFiltrados =res.docs.map((prod)=>{
@@ -54,19 +55,17 @@ const ItemListContainer = () => {
   
 },[categoryId])
 
-
-
   return (
+    
     <div style={{width:"100%"}}>
       {
         isLoading ? 
          <div className='div-productos'>
-            <BeatLoader className='div-productos' color={"black"}  size={50} />
+            <BeatLoader className='div-productos' color={"black"}  size={70} />
          </div>
         :
-           <ItemList productos={productos}/>
-      }
-        
+          <ItemList productos={productos} />   
+      } 
     </div>
   )
 }

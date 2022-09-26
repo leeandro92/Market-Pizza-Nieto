@@ -4,14 +4,11 @@ import Item from './Item/Item'
 
 
 const ItemList = ({productos}) => {
-    const onAdd=()=> {
-        alert ("Se ha agregado al carro")
-      }
   return (
     <div className='contenedor-card'>
         {
             productos.map((producto)=>
-                <Item key={producto.id} id={producto.id}title={producto.title} price={producto.price} stock={producto.stock} category={producto.category} img={producto.img} onAdd={onAdd} />  
+                <Item key={producto.id} id={producto.id}title={producto.title}   img={producto.img}  />  
             )
         }
     </div>

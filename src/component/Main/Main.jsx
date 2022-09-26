@@ -7,13 +7,13 @@ import Cart from '../Cart/Cart'
 const Main = () => {
   return (
     <main className='main-container'>
+      
       <Routes>
         <Route path='/' element={<ItemListContainer/>}/>
         <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
         <Route path='/detail/:id' element={<ItemDetailContainer/>}/> 
         <Route path='/cart' element={<Cart/>}/> 
-      </Routes>
-        
+      </Routes>  
     </main>
   )
 }

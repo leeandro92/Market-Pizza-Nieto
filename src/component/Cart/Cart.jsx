@@ -11,7 +11,13 @@ const Cart = () => {
 setIdCompra(id)
   }
   if(idCompra) {
-    return <h2>Gracias por la compra tu id es {idCompra}</h2>
+    return (
+    <div className='idCompraContenedor'>
+      <div className='idCompra'>
+        <h2>Gracias por la compra tu id es:<b style={{fontSize:"35px"}}>{idCompra}</b></h2>
+      </div>
+    </div>
+    )
   }
   if (cart.length === 0) {
     return (
@@ -25,7 +31,7 @@ setIdCompra(id)
   }
   
   return (
-    <div>
+    <div >
       <div className='cartContenedor'>  
       {cart.map((prod)=>(
           <div key={prod.id} className="cards">
@@ -33,14 +39,19 @@ setIdCompra(id)
             <h2 className='item-titulo'>{prod.title}</h2>
             <p> Precio: ${prod.price}</p>
             <p>Cantidad seleccionada:  {prod.quantity}</p>
-            <button onClick={() =>removeItem(prod.id)} className='boton-carro'> eliminar Producto</button>
+            <button onClick={() =>removeItem(prod.id)} className='button'> Eliminar Producto</button>
           </div>
         ))
         }
       </div>
-      <div>
-        <button onClick={clear}>borrar carrito</button>
-        <h4 >PRECIO TOTAL: $ {precioTotal()}</h4>
+      <div className='total-contenedor'>
+        <div className='borrarCarrito'>
+          <button onClick={clear} className="btnBorrarCarro">Vaciar Carrito</button>
+        </div>
+        <div className='precioTotal'>
+          <h4 >PRECIO TOTAL: $ {precioTotal()}</h4>
+          </div>
+        
       </div>
       <div>
           <Form cart={cart} precioTotal={precioTotal} clear={clear} obtenerIdCompra={obtenerIdCompra}></Form>

@@ -55,7 +55,6 @@ const product =cart.find((prod)=>prod.id === id)
         return sumarUnidad
     }
     const removeItem =(itemId)=> {
-        console.log(`eliminando ${itemId}`)
        const carritoFiltrado= cart.filter((prod)=>prod.id !== itemId)
        setCart(carritoFiltrado)
     }

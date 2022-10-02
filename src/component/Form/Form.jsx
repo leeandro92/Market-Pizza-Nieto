@@ -32,28 +32,32 @@ const Form = ({cart,precioTotal,clear,obtenerIdCompra}) => {
     }
   return (
     <div className='contenedor-formulario'>
-        <div>
-            <h3>Finalizar compra</h3>
-        </div>
+        
+            
+        
         <form action="" onSubmit={handleSubmit} className='formulario'>
+            <h3 style={{fontSize:"60px",fontFamily:'Caveat',width:"400px" }}>Finalizar compra</h3>
             <input type="text" 
                     placeholder='Nombre' 
                     name='nombre'
                     value={name} 
                     onChange={handleChangeName}
-                    required />
+                    required
+                    className='input' />
             <input type="number" 
                     placeholder='Telefono' 
                     name='Phone' 
                     value={phone} 
                     onChange={handleChangePhone}
-                    required />
+                    required 
+                    className='input'/>
             <input type="email" 
-                    placeholder='email'
+                    placeholder='Email'
                     name='email'
                     value={email} 
                     onChange={handleChangeEmail}
-                    required />
+                    required 
+                    className='input'/>
             <button>enviar</button>
         </form>
     </div>

@@ -86,12 +86,13 @@ li {
     background-image: url("../public/pizzaFondo.png");
     background-attachment:fixed;
     width: 100%;
-    height: 1500px;;
+    height:100%;
  }
  .div-productos{
     display:flex;
     justify-content:center;
-    height: 900px
+    height: 900px;
+    align-items: center;
  }
 
 .div-contenedor{
@@ -106,30 +107,32 @@ li {
 }
 
 .contenedorContador{
-    border: 1px solid rgb(0, 0, 0);
-    height: 150px;
-    width: 270px;
+    height: 120px;
+    width: 200px;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10px;
-    background-color: rgb(217, 210, 210);
+    
     border-radius:10px;
 }                                                         
 .contador{
     display: flex;
     justify-content: space-evenly;
+    
 }
 .texto-contador{
     font-size: 20px;
     font-weight:300;
+    
 
 }
 .boton-contador {
     width: 20px;
     height: 20px;
     transition: all 0.2s;
+    
 }
 .boton-contador:hover{
     background-color:rgb(15, 15, 15) ;
@@ -153,8 +156,8 @@ li {
 .button{
     display: inline-block;
     color:rgb(253, 252, 252);
-    padding: 20px 50px;
-    border: 3px solid rgb(24, 24, 80);
+    padding: 20px 30px;
+    border: 3px solid rgb(43, 43, 52);
     border-radius: 10px;
     font-size: 19px;
     background-color: black;
@@ -164,8 +167,8 @@ li {
 }
 @keyframes pulso {
     0%{
-        box-shadow: 0 0 25px rgb(89, 163, 200),
-                    0 0 50px rgb(80, 16, 119);
+        box-shadow: 0 0 25px rgb(8, 8, 8),
+                    0 0 50px rgb(223, 220, 225);
     }
 }
 .boton-carro{
@@ -220,12 +223,16 @@ li {
     display: flex;
     justify-content: center;
     padding: 10px;
+    height: 86.1vh;
+    
     
 }
 .detail-img{
-    width: 60%;
-    height:90% ;
-    padding: 5px;
+    width: 40%;
+    height:66% ;
+    padding: 1px;
+    border: 1px solid white;
+   
   
 }
 .detalles{
@@ -233,21 +240,31 @@ li {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    height: 66%;
+    width: 30%;
+    border: 2px solid rgb(253, 252, 252);
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    background-color: rgba(250, 250, 250, 0.947);
     
 }
 .detail-card{
     display: flex;
-    width:60% ;
+    width:50% ;
     height:70%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
     border: 2px solid black;
-    background-color: rgb(238, 234, 234);
+    background-color: rgba(0, 0, 0, 0.846);
+    color:rgb(0, 0, 0)
+
     
     
 }
 .contenedorCarga{
-   height: 800px; 
+   height: 807px; 
    display: flex;
     flex-direction: column;
    align-items: center;
@@ -255,8 +272,22 @@ li {
 }
 .cartContenedor{
     display: flex;
-    height: 700PX;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    
 }
+
+.irAlCarro {
+    font-size: 25px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+}
+
 .irAlHome {
     font-size: 25px;
     text-decoration: none;
@@ -265,8 +296,23 @@ li {
     padding: 10px;
     margin: 5px;
 }
+.idCompraContenedor{
+    height: 86.1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.idCompra{
+    background: linear-gradient(#232526,#414345);
+    height: 300px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color:white
+}
 .contenedor-formulario {
-    background-color:  rgb(238, 234, 234);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,12 +321,49 @@ li {
 .formulario{
     display: flex;
     flex-direction: column;
-    width: 20vw;
-    height: 200px;
-    background-color: black;
+    width: 40vw;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.753);
     justify-content: space-around;
     color:white;
     padding: 8px;
+    align-items: center;
+}
+.btnBorrarCarro{
+    font-size: 20px;
+    width: 150px;
+    border-radius: 50px;
+}
+.input {
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+    width: 500px;
+}
+.total-contenedor{
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid rgb(144, 140, 140);
+    margin: 5px;
+    color:rgb(255, 255, 255)
+    
+
+}
+.borrarCarrito{
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.precioTotal {
+    width: 25%;
+    height: 50px;
+    font-size: 30px;
+    display:flex;
+    justify-content: center;
+
 }
 
                                               /*Footer*/
@@ -288,5 +371,18 @@ li {
     background-color: rgb(29, 29, 29);
     width: 100%;
     height: 60px;
-    
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;  
+}
+.contenedorRedesSociales{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+.tituloRedSocial{
+    font-size:18px;
+    padding: 4px;
+    margin-left: 15px;
 }

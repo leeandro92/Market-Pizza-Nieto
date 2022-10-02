@@ -26,5 +26,3 @@ El proyecto esta basado en un E-commerce sobre una pizzeria para la venta de pro
 ```
  git clone https://github.com/leeandro92/Market-Pizza-Nieto.git
 ```
-
-### Deploy del proyecto

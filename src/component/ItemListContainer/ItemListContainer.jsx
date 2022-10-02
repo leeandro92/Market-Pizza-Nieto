@@ -43,7 +43,6 @@ const ItemListContainer = () => {
      id:prod.id,
      ...prod.data()
    }
- 
  })
  setProductos(productos)
  setIsLoading(false)

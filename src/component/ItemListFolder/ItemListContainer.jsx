@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import ItemList from './ItemsList/ItemList'
+import {ItemList} from './ItemsList/ItemList'
 import { useParams } from 'react-router-dom'
 import BeatLoader from "react-spinners/BeatLoader";
 import { collection,getDocs, query,where } from 'firebase/firestore';
 import { db } from '../../firebaseConfig';
 
 
-const ItemListContainer = () => {
+export const ItemListContainer = () => {
   
   const [productos,setProductos]=useState([])
   const [isLoading,setIsLoading] =useState(false)
@@ -69,4 +69,4 @@ const ItemListContainer = () => {
   )
 }
 
-export default ItemListContainer
+

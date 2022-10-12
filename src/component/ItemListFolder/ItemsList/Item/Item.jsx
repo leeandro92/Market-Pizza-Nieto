@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Item = ({title,id,img}) => {
+export const Item = ({title,id,img}) => {
     
   return (
     <div className="cards">
@@ -13,5 +13,3 @@ const Item = ({title,id,img}) => {
     </div>
   )
 }
-
-export default Item
